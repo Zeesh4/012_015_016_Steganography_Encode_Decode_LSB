@@ -1,8 +1,8 @@
-<!-- BLOG ZEESH4_015 -->
+<!-- APPS ZEESH4_015 -->
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Enkripsi Base64</title>
+    <title>Steganography LSB Base64</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,8 +29,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-            <li><a href="enkripsi.php">ENKRIPSI</a></li>
-            <li><a href="dekripsi.php">DEKRIPSI</a></li>
+            <li><a href="enkripsi.php">ENCODE</a></li>
+            <li><a href="dekripsi.php">DECODE</a></li>
           </ul>
         </div>
       </div>
@@ -38,11 +38,11 @@
 
     <div class="container-fluid bg-cover" id="home" style="margin-top:0px;">
       <div class="page-header">
-        <h1><b>ENKRIPSI GAMBAR BASE64</b></h1> 
+        <h1><b>STEGANOGRAPHY GAMBAR BASE64</b></h1> 
       </div>
       
-      <p>Menggunakan Algoritma Base64</p> 
-      <a class="btn btn-primary lg btn-lg" href="enkripsi.php">Mulai Enkripsi</a>
+      <p>Menggunakan Algoritma LSB Base64</p> 
+      <a class="btn btn-primary lg btn-lg" href="enkripsi.php">Mulai Encode</a>
       <a class="btn btn-success lg btn-lg" href="#bantuan">Panduan Penggunaan</a>
     </div>
 
@@ -53,7 +53,7 @@
           <hr>
           <div class="col-md-10"></div>
           <h4>Own Abd.Azzam.Z_015</h4>
-          <p>Format gambar yang didukung untuk di-enkripsi adalah sebagai berikut:</p>
+          <p>Format gambar yang didukung untuk di-encode adalah sebagai berikut:</p>
           <div class="col-md-6">
           <li>.jpg</li>
           <li>.jpeg</li>
@@ -65,27 +65,27 @@
           <li>.psd</li>
           </div> 
           <p>
-           Dengan mengenkripsi gambar dengan menggunakan Algoritma Base64 dalam metode proses encode dan decode maka pengamanan gambar akan lebih aman karena tidak sembarang orang dapat melihat gambar tersebut.
+           Dengan mengenkodekan sebuah gambar dengan menggunakan Algoritma lsb Base64 dalam metode proses encode dan decode maka pengamanan gambar akan lebih aman karena tidak sembarang orang dapat melihat gambar tersebut.
            User harus menginput terlebih dahulu gambar yang akan didekripsi dengan cara mencari file teks menggunakan tombol
            open file. Selanjutnya user dapat mengklik tombol dekripsi maka gambar akan berubah menjadi
            teks asli (plainteks) dan ukuran file dan waktu proses akan tampil pada form tersebut. Setelah
            proses dekripsi selesai, maka user dapat menyimpan hasil dekripsi dengan cara mengklik tombol simpan. Tampilam form dekripsi Base64
-           Gambar yang telah dienkripsi perlu didekripsi untuk dapat dilihat dalam bentuk gambar bukan teks. gambar yang berada di folder gambar boleh dihapus. Untuk mengetahui cara menggunakannya Anda bisa meng-klik tombol yang terdapat dibawah ini :
+           Gambar yang telah dienkodekan perlu didekoding untuk dapat dilihat dalam bentuk gambar bukan teks. gambar yang berada di folder gambar boleh dihapus. Untuk mengetahui cara menggunakannya Anda bisa meng-klik tombol yang terdapat dibawah ini :
           </p>
-          <a class="btn purple" href="#demoEn" data-toggle="collapse">Enkripsi | <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-          <a class="btn purple" href="#demoDe" data-toggle="collapse">Dekripsi | <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+          <a class="btn purple" href="#demoEn" data-toggle="collapse">Encode | <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+          <a class="btn purple" href="#demoDe" data-toggle="collapse">Decode | <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
 
           <br><br>
 
           <div id="demoEn" class="collapse">
-            ENKRIPSI
-            <li>Setelah berada di halaman enkripsi lalu pada form pilih gambar, pilih gambar yang akan di enkripsi.</li>
-            <li>selanjutnya klik tombol enkripsi maka akan muncul hasil enkripsi disamping berupa kumpulan karakter.</li>
+            ENCODE
+            <li>Setelah berada di halaman enkode lalu pada form pilih gambar, pilih gambar yang akan di encodingkan.</li>
+            <li>selanjutnya klik tombol encode maka akan muncul hasil enkoding disamping berupa kumpulan karakter.</li>
             <li>salin / unduh semua karakter tersebut untuk digunakan saat mendekripsi atau mengembalikan menjadi gambar kembali.</li><br/>
           </div>
 
           <div id="demoDe" class="collapse">
-            DEKRIPSI
+            DECODE
             <li>Setelah berada di halaman dekripsi lalu pada form plaintext, masukan teks / karakter untuk di dekripsi.</li>
             <li>selanjutnya klik tombol dekripsi maka akan muncul hasil dekripsi dibawah berupa gambar.</li>
             <li>untuk menyimpan sebagai gambar kembali pilih save image pada brower yang digunakan.</li>
@@ -120,5 +120,10 @@
       });
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Footer -->
+
+
+    <!-- End Footer -->
   </body>
 </html>

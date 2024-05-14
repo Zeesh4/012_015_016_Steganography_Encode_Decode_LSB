@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Enkripsi Base64</title>
+    <title>Encode Decode Base64</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,8 +28,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-            <li><a href="#enkripsi">ENKRIPSI</a></li>
-            <li><a href="dekripsi.php">DEKRIPSI</a></li>
+            <li><a href="#enkripsi">ENCODE</a></li>
+            <li><a href="dekripsi.php">DECODE</a></li>
           </ul>
         </div>
       </div>
@@ -37,7 +37,7 @@
 
     <div class="container-fluid bg-cover" id="enkripsi" style="margin-top:0px;">
       <div class="page-header">
-        <h3><b>ENKRIPSI GAMBAR</b></h3> 
+        <h3><b>ENCODE FILE GAMBAR</b></h3> 
       </div>
         <div class="col-md-4">
             <form method="post" enctype="multipart/form-data">
@@ -47,12 +47,12 @@
                   <span class="input-group-addon"><i class="glyphicon glyphicon-file"></i></span>
                   <input id="upload" type="file" class="form-control" name="gambar">
                 </div><br>
-                <button class="btn btn-primary btn-lg" type="submit" id="submit" name="submit">Enkripsi  <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></button><br><br>
+                <button class="btn btn-primary btn-lg" type="submit" id="submit" name="submit">Encode  <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></button><br><br>
               </div>
             </form>
         </div>
         <div class="col-md-8">
-          <h4>Hasil Enkripsi</h4>
+          <h4>Hasil Encoding</h4>
                 
                 <?php
 
@@ -70,7 +70,7 @@
 				
                 <form method="post" action="getTxt.php">
                 <textarea name="txt" class="form-control" rows="8" id="comment"><?php echo $enkripsi; ?></textarea><br>
-                <label style="color:yellow;">Salin untuk digunakan saat dekripsi /</label>
+                <label style="color:yellow;">Salin untuk digunakan saat decoding /</label>
                 <button type="submit" class="btn btn-success" href="gettxt.php">Unduh .txt</button>
                 <!-- <a class="btn btn-success" type="submit" href="getTxt.php">Get .txt</a> -->
                 </form>

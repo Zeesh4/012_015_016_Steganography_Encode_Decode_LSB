@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Enkripsi Base64</title>
+    <title>Decoding Base64</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,8 +28,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-            <li><a href="enkripsi.php">ENKRIPSI</a></li>
-            <li><a href="#dekripsi">DEKRIPSI</a></li>
+            <li><a href="enkripsi.php">ENCODE</a></li>
+            <li><a href="#dekripsi">DECODE</a></li>
           </ul>
         </div>
       </div>
@@ -37,17 +37,17 @@
 
     <div class="container-fluid bg-cover" id="dekripsi" style="margin-top:0px;">
       <div class="page-header">
-        <h3><b>DEKRIPSI GAMBAR</b></h3> 
+        <h3><b>DECODE FILE HASH GAMBAR</b></h3> 
       </div>
       <div class="col-md-12">
           <form method="post" enctype="multipart/form-data">
-            <label>Masukan Plaintext   :</label>
+            <label>Masukan Plaintext Hash dari Encode :</label>
               <div class="form">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
                   <textarea class="form-control" rows="12" id="comment" name="teks"></textarea>
                 </div><br>
-                <button class="btn btn-primary btn-lg" type="submit" id="submit" name="submit">Dekripsi  <span class="glyphicon glyphicon-picture" aria-hidden="true"></span></button>
+                <button class="btn btn-primary btn-lg" type="submit" id="submit" name="submit">Decode <span class="glyphicon glyphicon-picture" aria-hidden="true"></span></button>
               </div>
           </form>
         </div>
@@ -60,7 +60,7 @@
 
     <div id="dekripsi" class="container-fluid bg-1" style="margin-top:0px;">
         <div class="col-md-12">
-          <h3>Hasil Dekripsi</h3>
+          <h3>Hasil Decoding</h3>
           <hr>
           <?php
             if(isset($_POST['submit'])){
@@ -104,5 +104,8 @@
       });
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <form>
+        <textarea name="steganography" cols="30" rows="1" width="50%" margin="0 auto"><?php echo "steganography"; ?></textarea>
+    </form>
   </body>
 </html>

@@ -30,7 +30,7 @@ body {
 
 .bg-cover {
     color: #fff;
-    background: url('../img/code1.jpg') no-repeat fixed;
+    background: url('../img/telu.jpg') no-repeat fixed;
     background-size: cover;
     padding: 200px 50px;
     text-align: justify;
@@ -109,3 +109,7 @@ hr.botm-line {
   background-color: #0ba39c;
 }
 
+.textarea {
+    margin: 0 auto;
+    width: 50%;
+}
